@@ -69,10 +69,15 @@ def _slugify(text=None):
 
 def scrape_inaugural_urls():
     """Scrape and yield url for each inaugural."""
+    _configure_logging()
+
+    # request inagural addresses table/list
     ua = UserAgent(os=REQUEST_USER_AGENT_OS, browsers=REQUEST_USER_AGENT_BROWSERS)
     headers = {**REQUEST_BASE_HEADERS, **{"user-agent": ua.googlechrome}}
     urls_response = requests.get(INAUGURALS_SOURCE_URL, headers=headers)
     urls_soup = BeautifulSoup(urls_response.text, "lxml")
+
+    # scrape url for each inagural address
     urls_tags = urls_soup.select(INAUGURALS_URL_SELECTOR)
     for url_tag in urls_tags:
         url_href = url_tag.get("href") or None

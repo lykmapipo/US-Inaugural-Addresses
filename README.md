@@ -36,7 +36,7 @@ python scrape_inaugural_addresses.py
 ```
 
 ## Data
-Check `data/raw/inaugural-addresses` directory for all raw scraped data. Each file is in `text format`, and named following `{year}-{president name}` pattern.
+Check [data/raw/inaugural-addresses](https://github.com/lykmapipo/US-Inaugural-Addresses/tree/main/data/raw/inaugural-addresses) directory for all raw scraped data. Each file is in `text format`, and named following `{year}-{president name}` pattern.
 
 ## Contribute
 
