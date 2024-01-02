@@ -35,8 +35,15 @@ pip install -r requirements.txt
 python scrape_inaugural_addresses.py
 ```
 
+- To analyze raw words, to aid next analysis steps, run:
+```sh
+python analyze_raw_words.py
+```
+
 ## Data
-Check [data/raw/inaugural-addresses](https://github.com/lykmapipo/US-Inaugural-Addresses/tree/main/data/raw/inaugural-addresses) directory for all raw scraped data. Each file is in `text format`, and named following `{year}-{president name}` pattern.
+- Check [data/raw/inaugural-addresses](https://github.com/lykmapipo/US-Inaugural-Addresses/tree/main/data/raw/inaugural-addresses) directory for all raw scraped data. Each file is in `text format`, and named following `{year}-{president name}` pattern.
+
+- Check [raw words wordcloud](https://github.com/lykmapipo/US-Inaugural-Addresses/tree/main/data/interim/inaugural_address_raw_words_wordcloud.png) and [raw words metadata](https://github.com/lykmapipo/US-Inaugural-Addresses/tree/main/data/interim/inaugural_address_raw_words_metadata.csv) generated from analyzing raw words.
 
 ## Contribute
 
